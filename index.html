@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href= "./assets/style.css">
+    <title>My New website</title>
+</head>
+<body >
+    
+    <header class="first_box"> </header>
+    <h1 class="title" >My New Website</h1>
+    <div class="first_box">
+        
+        <p id="second_box" class="display" ></p>
+        
+    </div>      
+   
+    <section >
+        <img src="C:\Users\User\Downloads\01-HTML-Git-CSS\01-HTML-Git-CSS\01-Activities\22-Stu_Mini-Project\assets\image-1.png" alt="Image" class="center-image">
+    </section>
+
+    <section1>
+        <p class="center-text" id="text-under">You Can Roll A Dice Here</p>
+    </section1>
+    
+    <section2 class="center-text" id="third_box" >
+    <!-- Here for the part between -->
+        <p id="result">Click "Roll The Dice" to start!</p>
+        <div  class="center-text">
+        <button class="button" onclick="rollDice()">Roll The Dice</button>
+        </div>
+        <script >
+            function rollDice() {
+            // Generate a random number between 1 and 6
+            var diceRoll = Math.floor(Math.random() * 6) + 1;
+
+            // Update the result paragraph with the roll result
+            document.getElementById('result').textContent = `You rolled a ${diceRoll}!`;
+            }   
+            
+        </script>
+        <div class="container" >
+            <section3 >
+                <p class="back" > @2023 My Roll A Dice Website</p>
+            </section3>
+            <div class="final_box">
+                <p >none</p> 
+            </div>
+        </div>
+        
+    </section2>
+    <section4 class="first_box">
+        <h3 id="Github"><strong>Github</strong> </h3>
+        <h3 id="Portfolio"><strong>Portfolio</strong> </h3>
+        <h3 id="Contact"><strong>Contact</strong> </h3>
+    </section4>
+
+    
+
+
+   
+</body>
+</html>
